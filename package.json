@@ -1,0 +1,13 @@
+{
+  "name": "validation-purpose-code",
+  "version": "1.0.0",
+  "description": "Controlled Node.js codebase for software validation of SonarQube",
+  "type": "module",
+  "main": "src/validate_sonarqube.js",
+  "scripts": {
+    "validate": "node src/validate_sonarqube.js"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
