@@ -2,9 +2,9 @@ import { execSync } from 'child_process';
 import assert from 'assert/strict';
 
 // Configuration Definitions
-const SONAR_SERVER = process.env.SONAR_HOST_URL || 'http://localhost:9000';
+const SONAR_SERVER = process.env.SONAR_HOST_URL || 'http://localhost:6788';
 const SONAR_TOKEN = process.env.SONAR_TOKEN;
-const PROJECT_KEY = 'audit-validation-payload';
+const PROJECT_KEY = process.env.SONAR_PROJECT_KEY || 'validation-testing-code';
 
 // Target Expected Results (The Defect Matrix)
 const EXPECTED_METRICS = {
