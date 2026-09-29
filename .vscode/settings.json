@@ -1,0 +1,6 @@
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "Localhost Sonarqube Community - 6788",
+        "projectKey": "validation-testing-code"
+    }
+}

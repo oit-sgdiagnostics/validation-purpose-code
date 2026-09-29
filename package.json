@@ -5,7 +5,8 @@
   "type": "module",
   "main": "src/validate_sonarqube.js",
   "scripts": {
-    "validate": "node src/validate_sonarqube.js"
+    "validate": "node --env-file=.env src/validate_sonarqube.js",
+    "sonar": "node scripts/sonar.js"
   },
   "engines": {
     "node": "24.x"

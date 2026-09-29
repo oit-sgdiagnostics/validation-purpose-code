@@ -1,5 +1,5 @@
 import { execSync } from 'child_process';
-import assert from 'assert/strict';
+import assert from 'node:assert/strict';
 
 // Configuration Definitions
 const SONAR_SERVER = process.env.SONAR_HOST_URL || 'http://localhost:6788';
@@ -33,6 +33,7 @@ async function runValidation() {
 
         console.log('Analysis submitted successfully.\n');
     } catch (error) {
+        // SonarQube Scanner execution failed
         console.error('Validation Failure: Scanner execution failed.');
         process.exit(1);
     }
@@ -69,7 +70,7 @@ async function runValidation() {
         const actual = {};
 
         measures.forEach(measure => {
-            actual[measure.metric] = parseInt(measure.value, 10);
+            actual[measure.metric] = Number.parseInt(measure.value, 10);
         });
 
         console.log('Actual Analysis Results:', actual);
