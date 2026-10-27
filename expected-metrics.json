@@ -1,0 +1,18 @@
+{
+    "bugs": 2,
+    "vulnerabilities": 6,
+    "code_smells": 2,
+    "qualityGate": "ERROR",
+    "issues": [
+        { "defect": "DEF-01", "type": "VULNERABILITY", "rule": "javascript:S6418", "line": 9 },
+        { "defect": "DEF-01", "type": "VULNERABILITY", "rule": "secrets:S6689", "line": 9 },
+        { "defect": "DEF-02", "type": "BUG", "rule": "javascript:S1751", "line": 13 },
+        { "defect": "DEF-03", "type": "VULNERABILITY", "rule": "javascript:S4830", "line": 26 },
+        { "defect": "DEF-03", "type": "VULNERABILITY", "rule": "javascript:S5527", "line": 26 },
+        { "defect": "DEF-04", "type": "BUG", "rule": "javascript:S2688", "line": 35 },
+        { "defect": "DEF-04", "type": "CODE_SMELL", "rule": "javascript:S7773", "line": 35 },
+        { "defect": "DEF-05", "type": "VULNERABILITY", "rule": "javascript:S4790", "line": 40 },
+        { "defect": "DEF-06", "type": "VULNERABILITY", "rule": "javascript:S2245", "line": 45 },
+        { "defect": "DEF-07", "type": "CODE_SMELL", "rule": "javascript:S1481", "line": 50 }
+    ]
+}
